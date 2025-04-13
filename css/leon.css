@@ -53,43 +53,43 @@ body {
     align-items: center;
 }
 
-.container .logo {
+.header .logo {
     font-size: 40px;
 }
 
-.container .links {
+.header .links {
     position: relative;
 }
 
-.container .links .icon {
+.header .links .icon {
     width: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 
-.container .links .icon span {
+.header .links .icon span {
     background-color: #333;
     height: 2px;
     margin-bottom: 5px;
    
 }
 
-.container .links .icon:hover  span:nth-child(2) {
+.header .links:hover .icon span:nth-child(2) {
     width: 100%;
 }
 
-.container .links .icon span:first-child {
+.header .links .icon span:first-child {
     width: 100%;
 }
 
-.container .links .icon span:nth-child(2)
+.header .links .icon span:nth-child(2)
 {
     width: 60%;
-    transition-duration: .5s;
+    transition-duration: .3s;
 }
 
-.container .links .icon span:last-child {
+.header .links .icon span:last-child {
     width: 100%;
 }
 
