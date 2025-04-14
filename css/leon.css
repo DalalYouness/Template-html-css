@@ -179,6 +179,46 @@ body {
     line-height: 1.8;
 }
 
-
-
 /* End Landing Section */
+
+/* start features section */
+.features {
+    background-color: #eee;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.features .container {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 20px;
+}
+
+.features .feat {
+    text-align: center;
+    padding: 20px;
+}
+
+.features .feat i {
+    font-size: 30px;
+    color: var(--mainColor);
+}
+
+.features .feat h3 {
+    font-weight: 800px;
+    margin: 30px 0;
+}
+
+.features .feat p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #777;
+}
+
+
+
+
+
+
+/* and features section */
