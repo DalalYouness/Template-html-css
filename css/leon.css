@@ -8,7 +8,9 @@ body {
     font-family: "Work Sans", sans-serif;
 }
 
-
+:root {
+    --mainColor:rgb(154, 40, 189);
+}
 .container {
 
     padding-left: 15px; 
@@ -55,6 +57,7 @@ body {
 
 .header .logo {
     font-size: 30px;
+    color: var(--mainColor);
 }
 
 .header .links {
@@ -93,7 +96,6 @@ body {
     width: 100%;
 }
 
-
 .header .links ul {
     margin: 0;
     padding: 0;
@@ -103,13 +105,13 @@ body {
     right: 0;
     min-width: 200px;
     top: calc(100% + 15px);
-     display: none 
+    display: none;
+    z-index: 1;
 }
 
 .header .links:hover ul {
     display: block;
 }
-
 
 .header .links ul::before {
     content: "";
@@ -120,7 +122,6 @@ body {
     top: -20px;
     right: 5px;
 }
-
 
 .header .links ul li a {
     display: block;
@@ -133,14 +134,50 @@ body {
 .header .links ul li a:hover {
     padding-left: 25px;
     font-weight: bold;
+    color: var(--mainColor);
 }
 
 .header .links ul li:not(li:last-child) a {
     border-bottom: 1px solid #ddd;
 }
 
-/* .header .links .icon:hover + ul {
-    display: block;
-} */
+
 /*End Header*/
 
+
+/* start Landing Section */
+
+.landing {
+    background-image: url(../images/pexels-photo-355770.jpg);
+    background-size: cover;
+    height: calc(100vh - 74.5px);
+    position: relative;
+}
+
+.landing .text-intro {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    line-height: 1.8;
+    width: 320px;
+    max-width: 100%;
+
+}
+
+.landing .text-intro h2 {
+    margin: 0;
+    font-size: 45px;
+    letter-spacing: -2px;
+    font-weight: bold;
+    color: var(--mainColor);
+}
+
+.landing .text-intro p {
+
+}
+
+
+
+/* End Landing Section */
