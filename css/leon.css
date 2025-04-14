@@ -166,16 +166,17 @@ body {
 
 }
 
-.landing .text-intro h2 {
+.landing .text-intro h1 {
     margin: 0;
-    font-size: 45px;
+    font-size: 50px;
     letter-spacing: -2px;
     font-weight: bold;
     color: var(--mainColor);
 }
 
 .landing .text-intro p {
-
+    font-size: 19px;
+    line-height: 1.8;
 }
 
 
