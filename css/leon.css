@@ -393,7 +393,52 @@ body {
     }
 }
 
-
-
-
 /* End Portfolio */
+
+/* Start About Section */
+.about-section {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+}
+.about-section .about-content .about-image {
+    width: 201px;
+    height: 251px;
+    position: relative;
+}
+.about-section .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.about-section .about-content .about-image:after {
+    content: "";
+    position: absolute;
+    background-color: #ebeced;
+    height: calc(100% + 60px);
+    width: 60px;
+    top: -30px;
+    left: -8px;
+    z-index: -1;
+}
+
+.about-section .about-content .about-image:before {
+    content: "";
+    position: absolute;
+    height: 70%;
+    width: 60px;
+    border-left: 60px solid var(--mainColor);
+    border-bottom: 60px solid var(--mainColor);
+    right: -90px;
+    top: -20px;
+    z-index: -1;
+
+
+}
+
+
+
+
+
+/* End About Section */
