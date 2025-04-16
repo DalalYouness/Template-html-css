@@ -12,6 +12,8 @@ body {
     --mainColor:rgb(154, 40, 189);
     --iconSize: 30px;
     --Secondary-color: rgb(12, 12, 83);
+    --section-padding: 60px;
+    --section-color: #f6f6f6;
 }
 .container {
 
@@ -218,9 +220,9 @@ body {
 
 /* start features section */
 .features {
-    background-color: #eee;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    background-color: var(--section-color);
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 
 .features .container {
@@ -254,8 +256,8 @@ body {
 
 /* start service */
 .services {
-    padding-top: 60px;
-    padding-bottom: 60px; 
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding); 
 }
 
 .services .service-content {
@@ -343,5 +345,55 @@ body {
     }
 }
 
-
 /* End Services */
+
+
+/* start Portfolio */
+
+.portfolio {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding); 
+    background-color: var(--section-color);
+}
+
+.portfolio .Portfolio-content .card {
+    background-color: white;
+}
+
+.portfolio .Portfolio-content .card  img {
+    max-width: 100%;
+
+}
+
+.portfolio .Portfolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    gap: 30px;
+    margin-top: 80px;
+}
+
+.portfolio .Portfolio-content .card .description {
+    padding: 20px;
+}
+
+.portfolio .Portfolio-content .card h3 {
+    margin: 0;
+}
+
+.portfolio .Portfolio-content .card p {
+    color: #777;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+@media (max-width:767px)
+{
+    .portfolio .Portfolio-content .card .description {
+        text-align: center;
+    }
+}
+
+
+
+
+/* End Portfolio */
